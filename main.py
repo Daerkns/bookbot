@@ -9,7 +9,8 @@ def get_book_text(filepath):
 
 def main():
     book_text = get_book_text("books/frankenstein.txt")
-    print(book_text)
+    num_words = len(book_text.split())
+    print(f"Found {num_words} total words")
 
 
 if __name__ == "__main__":
